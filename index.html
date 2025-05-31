@@ -1,52 +1,88 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RegexTester - Smart Regex Playground</title>
+    <meta name="description"
+        content="RegexTester is a smart playground to test, visualize, and export regular expressions with real-time feedback. Built for developers.">
+    <meta name="keywords"
+        content="regex tester, regular expressions, developer tool, regex playground, regex online, test regex">
+    <meta name="author" content="Satyam sinha">
+    <meta property="og:title" content="RegexTester - Smart Regex Playground" />
+    <meta property="og:description"
+        content="A smart playground to test, visualize and export regular expressions in real-time." />
+    <meta property="og:image" content="https://regextester.biz/og-image.png" />
+    <meta property="og:url" content="https://regextester.biz" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>RegexTester – Smart Regex Playground for Developers</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <div class="logo"><span class="blue">Regex</span><span class="yellow">Tester</span></div>
-      <nav>
-        <a href="#features">Features</a>
-        <a href="#newsletter">Subscribe</a>
-        <a target="_blank" href="https://app.regextester.biz" class="btn">Launch App 🚀</a>
-      </nav>
+        <div class="logo"><span class="blue">Regex</span><span class="yellow">Tester</span></div>
+        <nav>
+            <div class="nav-links" id="nav-links">
+                <a href="#features">Features</a>
+                <a href="#subscribe">Subscribe</a>
+                <a href="#contribute">Contribute</a>
+                <a href="https://app.regextester.biz" class="launch-btn">Launch App 🚀</a>
+            </div>
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+        </nav>
+
     </header>
 
     <main>
-      <section class="hero">
-        <h1><span class="highlight">Master</span> Regular Expressions Effortlessly</h1>
-        <p>
-          A smart playground for developers to test, visualize and export regex with real-time feedback.
-        </p>
-        <a target="_blank" href="https://app.regextester.biz" class="btn-primary">🚀 Try App Now</a>
-      </section>
+        <section class="hero">
+            <h1><span class="highlight">Master</span> Regular Expressions Effortlessly</h1>
+            <p>
+                A smart playground for developers to test, visualize and export regex with real-time feedback.
+            </p>
+            <a target="_blank" href="https://app.regextester.biz" class="btn-primary">🚀 Try App Now</a>
+        </section>
 
-      <section id="features" class="features">
-        <h2>Key Features</h2>
-        <ul>
-          <li>🔍 Live Regex Testing</li>
-          <li>🎨 Visual Match Highlights</li>
-          <li>📦 Export Regex in multiple languages</li>
-          <li>💾 Save your regex patterns</li>
-        </ul>
-      </section>
+        <section id="features" class="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>🔍 Live Regex Testing</li>
+                <li>🎨 Visual Match Highlights</li>
+                <li>📦 Export Regex in multiple languages</li>
+                <li>💾 Save your regex patterns</li>
+            </ul>
+        </section>
 
-      <section id="newsletter" class="newsletter">
-        <h2>Stay Updated</h2>
-        <p>Subscribe to get regex tips & updates!</p>
-        <form>
-          <input type="email" placeholder="Enter your email" required />
-          <button type="submit">Subscribe</button>
-        </form>
-      </section>
+        <section id="newsletter" class="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to get regex tips & updates!</p>
+            <form>
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        <section id="contribute" class="contribute">
+            <h2>Contribute to RegexTester</h2>
+            <p>RegexTester is open-source and built by developers like you. Want to improve it?</p>
+            <a href="https://github.com/satyamsinha111/RegexPlayground" target="_blank" class="btn-primary">💻 View on
+                GitHub</a>
+        </section>
+
     </main>
 
     <footer>
-      <p>© 2025 RegexTester. Built for developers with ❤️</p>
+        <p>© 2025 RegexTester. Built for developers with ❤️</p>
     </footer>
-  </body>
+
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const links = document.getElementById("nav-links");
+
+        toggle.addEventListener("click", () => {
+            links.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
 </html>

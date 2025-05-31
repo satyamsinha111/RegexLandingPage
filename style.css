@@ -100,6 +100,11 @@ nav a.btn {
   padding: 60px 20px;
   text-align: center;
 }
+
+.newsletter p{
+    margin-bottom: 2rem;
+}
+
 .newsletter input {
   padding: 10px;
   width: 250px;
@@ -121,4 +126,71 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
+}
+
+
+.contribute {
+  padding: 60px 20px;
+  background-color:  var(--primary-bg);;
+  text-align: center;
+}
+.contribute h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.contribute p {
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+.contribute a.btn-primary {
+  background-color: #22c55e;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  color: #facc15;
+  border: none;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/* Responsive Mobile Nav */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #1e293b;
+    padding: 10px 20px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: inline;
+  }
 }
